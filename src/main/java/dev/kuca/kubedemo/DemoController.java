@@ -17,7 +17,7 @@ public class DemoController {
     @GetMapping
     public String demo(HttpServletRequest request){
         StringBuilder sb = new StringBuilder();
-        sb.append("calling:");
+        sb.append("calling: v 2");
         sb.append("Method:").append(request.getMethod()).append("\n");
         sb.append("Path:").append(request.getServletPath()).append("\n");
         sb.append("Param UNHEALTH_RATE:").append(System.getenv("UNHEALTH_RATE")).append("\n");
