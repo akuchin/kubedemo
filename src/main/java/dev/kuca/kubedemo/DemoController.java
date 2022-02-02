@@ -22,6 +22,7 @@ public class DemoController {
         sb.append("Path:").append(request.getServletPath()).append("\n");
         sb.append("Param UNHEALTH_RATE:").append(System.getenv("UNHEALTH_RATE")).append("\n");
         sb.append("demo.var :").append(demoVar).append("\n");
+
         return sb.toString();
     }
 
