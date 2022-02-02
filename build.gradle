@@ -1,9 +1,19 @@
 plugins {
     id 'org.springframework.boot' version '2.1.5.RELEASE'
     id 'java'
+    id "org.sonarqube" version "3.3"
+
 }
 
 apply plugin: 'io.spring.dependency-management'
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "akuchin_kubedemo"
+    property "sonar.organization", "akuchin"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 
 group = 'dev.kuca'
 sourceCompatibility = '1.8'
